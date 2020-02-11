@@ -17,6 +17,12 @@ inputs:
   eslint_flags:
     description: "flags and args of eslint command. Default: '.'"
     default: '.'
+  npm_install_args:
+    description: |
+      List of packages passed to "npm install". Default is "eslint" which installs latest version of ESLint.
+      To install ESLint plugins: "eslint eslint-plugin-vue"
+      To install a specific version: "eslint@5.16.0"
+    default: 'eslint'
 runs:
   using: 'docker'
   image: 'Dockerfile'
