@@ -1,4 +1,4 @@
-FROM node:current-alpine
+FROM node:lts-alpine
 
 ENV REVIEWDOG_VERSION=v0.9.17
 
